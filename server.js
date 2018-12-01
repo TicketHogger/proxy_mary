@@ -44,11 +44,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 //   })
 // )
 
-// app.get('/api/movies/:actor/relatedmovies',
-//   proxy({
-//     target: 'http://localhost:3003'
-//   })
-// )
+app.get('/api/movies/:actor/relatedmovies',
+  proxy({
+    target: 'http://3.17.77.149:3003'
+  })
+)
 
 // app.get('/api/movies/:movie/:date/:location',
 //   proxy({
